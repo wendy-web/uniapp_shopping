@@ -1,4 +1,4 @@
-import App from './App'
+import App from './App';
 
 // #ifndef VUE3
 import Vue from 'vue'
@@ -7,7 +7,7 @@ App.mpType = 'app'
 const app = new Vue({
     ...App
 })
-app.$mount()
+app.$mount();
 // #endif
 
 // #ifdef VUE3
