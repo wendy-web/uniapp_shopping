@@ -14,7 +14,8 @@
 		onShow() {
 			const timer = setTimeout(function() {
 				clearTimeout(timer);
-				uni.navigateTo({
+				// tabBar的跳转要使用switchTab使用
+				uni.switchTab({
 					url: '/pages/home/index'
 				});
 			}, 2000);

@@ -3,7 +3,8 @@
     "pages/home/index",
     "pages/message/index",
     "pages/center/index",
-    "pages/404/404"
+    "pages/404/404",
+    "pages/detail/detail"
   ],
   "subPackages": [],
   "window": {

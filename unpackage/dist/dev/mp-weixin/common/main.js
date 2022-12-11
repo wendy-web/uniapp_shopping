@@ -102,6 +102,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   // 404 页面不存在时跳转
   onPageNotFound: function onPageNotFound() {
+    // 编程式导航
     uni.navigateTo({
       url: '/pages/404/404' });
 

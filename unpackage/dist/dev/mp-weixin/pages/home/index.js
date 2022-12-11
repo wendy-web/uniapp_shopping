@@ -138,7 +138,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
 //
 //
 //
@@ -159,10 +160,21 @@ var _default =
       title: 'home' };
 
   },
+  onLoad: function onLoad(option) {
+    // 获取到当前的页面信息
+    console.log(getCurrentPages(), 'getCurrentPage');
+  },
   onShow: function onShow() {
     console.log('onShow');
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    clickHandle: function clickHandle() {
+      console.log('333');
+      uni.navigateTo({
+        url: '/pages/detail/detail?name=2' });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 18 */

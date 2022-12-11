@@ -7,6 +7,7 @@
 			</view>
 		</view>
 		<view>
+			<button @click="clickHandle">go to center</button>
 			<text selectable space="nbsp">text   sdefef的标签</text>
 		</view>
 	</view>
@@ -19,10 +20,20 @@
 				title: 'home'
 			}
 		},
+		onLoad(option) {
+			// 获取到当前的页面信息
+			console.log(getCurrentPages(),'getCurrentPage')
+		},
 		onShow() {
 			console.log('onShow')
 		},
 		methods: {
+			clickHandle() {
+				console.log('333');
+				uni.navigateTo({
+					url: '/pages/detail/detail?name=2'
+				})
+			},
 
 		}
 	}

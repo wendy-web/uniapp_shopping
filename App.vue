@@ -11,6 +11,7 @@
 		},
 		// 404 页面不存在时跳转
 		onPageNotFound: function() {
+			// 编程式导航
 			uni.navigateTo({
 				url: '/pages/404/404'
 			});
