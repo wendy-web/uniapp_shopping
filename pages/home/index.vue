@@ -7,7 +7,7 @@
 			</view>
 		</view>
 		<view>
-			<text selectable space="nbsp">text      sdefef的标签</text>
+			<text selectable space="nbsp">text   sdefef的标签</text>
 		</view>
 	</view>
 </template>

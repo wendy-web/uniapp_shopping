@@ -14,6 +14,12 @@
 				title: 'center'
 			}
 		},
+		onShow() {
+			console.log("onshow - - center的组件的使用")
+		},
+		onPullDownRefresh() {
+			console.log("页面的下拉刷新")
+		},
 		methods: {
 
 		}
