@@ -19,8 +19,8 @@
 				title: 'home'
 			}
 		},
-		onLoad() {
-
+		onShow() {
+			console.log('onShow')
 		},
 		methods: {
 

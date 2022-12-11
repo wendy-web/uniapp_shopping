@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/index",
     "pages/message/index",
-    "pages/center/index"
+    "pages/center/index",
+    "pages/404/404"
   ],
   "subPackages": [],
   "window": {

@@ -6,8 +6,8 @@
   },
   "setting": {
     "urlCheck": false,
-    "es6": false,
-    "postcss": false,
+    "es6": true,
+    "postcss": true,
     "minified": false,
     "newFeature": true,
     "bigPackageSizeSupport": true,
@@ -39,17 +39,30 @@
   "appid": "touristappid",
   "projectname": "uniapp_first",
   "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
     "miniprogram": {
+      "current": 0,
       "list": [
         {
           "name": "我的",
-          "pathName": "pages/index/index",
-          "query": ""
+          "id": 0,
+          "pathName": "pages/center/index"
         },
         {
           "name": "test",
-          "pathName": "pages/message/index",
-          "query": ""
+          "id": 1,
+          "pathName": "pages/message/index"
         }
       ]
     }

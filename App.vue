@@ -8,7 +8,17 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
-		}
+		},
+		// 404 页面不存在时跳转
+		onPageNotFound: function() {
+			uni.navigateTo({
+				url: '/pages/404/404'
+			});
+		},
+		onThemeChange: function(options) {
+			console.log(':onThemeChange监听系统主题变化')
+			console.log(options)
+		},
 	}
 </script>
 

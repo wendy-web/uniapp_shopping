@@ -4,12 +4,17 @@
 ```json
 "condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式（list 的索引项）
-		"list": [{
-				"name": "我的", //模式名称
-				"path": "pages/index/index" //启动页面，必选
+		"list": [
+			{
+				"name": "home",
+				"path": "pages/home/index"
 			},
 			{
-				"name": "test",
+				"name": "我的", //模式名称
+				"path": "pages/center/index" //启动页面，必选
+			},
+			{
+				"name": "message",
 				"path": "pages/message/index"
 			}
 		]

@@ -159,8 +159,8 @@ var _default =
       title: 'home' };
 
   },
-  onLoad: function onLoad() {
-
+  onShow: function onShow() {
+    console.log('onShow');
   },
   methods: {} };exports.default = _default;
 
