@@ -6,7 +6,15 @@
     "pages/404/404",
     "pages/detail/detail"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subpages",
+      "pages": [
+        "news/news"
+      ],
+      "independent": true
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
@@ -38,6 +46,14 @@
         "text": "我的"
       }
     ]
+  },
+  "preloadRule": {
+    "pages/center/index": {
+      "network": "all",
+      "packages": [
+        "subpages"
+      ]
+    }
   },
   "usingComponents": {}
 }

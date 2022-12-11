@@ -39,6 +39,32 @@
             
         }
     ],
+	"subPackages": [
+		{
+			"root": "subpages",
+			"pages": [
+				{
+					"path": "news/news",
+					"style" :
+					{
+					    "navigationBarTitleText": "",
+					    "enablePullDownRefresh": false
+					}
+					
+				}
+			],
+			// 独立的分包的使用，配置独立分包时，进入此独立分即不会下载主分包的内容，也不能依赖主包和其他分包中的内容；
+			"independent":true
+		}
+	],
+	// 预下载
+	"preloadRule":{
+		// 当我们进入了pages/index/index页面以后就会预下载pages/subPack分包
+		"pages/center/index": {
+			"network": "all",	//在指定网络下预下载，可选值为：all（不限网络）、wifi（仅wifi下预下载）
+			"packages": ["subpages"]	//进入页面后预下载分
+		}
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

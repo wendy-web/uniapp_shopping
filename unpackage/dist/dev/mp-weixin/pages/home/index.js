@@ -153,6 +153,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -172,6 +173,12 @@ var _default =
       console.log('333');
       uni.navigateTo({
         url: '/pages/detail/detail?name=2' });
+
+    },
+    // 分包的处理使用
+    clickHandle2: function clickHandle2() {
+      uni.navigateTo({
+        url: '/subpages/news/news' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

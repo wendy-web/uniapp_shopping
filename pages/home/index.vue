@@ -8,6 +8,7 @@
 		</view>
 		<view>
 			<button @click="clickHandle">go to center</button>
+			<button @click="clickHandle2">go to center</button>
 			<text selectable space="nbsp">text   sdefef的标签</text>
 		</view>
 	</view>
@@ -34,6 +35,12 @@
 					url: '/pages/detail/detail?name=2'
 				})
 			},
+			// 分包的处理使用
+			clickHandle2() {
+				uni.navigateTo({
+					url: '/subpages/news/news'
+				})
+			}
 
 		}
 	}
